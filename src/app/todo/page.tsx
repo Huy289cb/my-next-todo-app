@@ -7,7 +7,7 @@ const poppins = Poppins({ weight: ["300" , "400" , "500" , "600" , "700" , "800"
 export default function Home() {
   return (
     <main className={clsx(poppins.className, styles.main)}>
-      <h2>Hello Nextjs</h2>
+      <h2>{"//TODO Add my todo template here..."}</h2>
     </main>
   )
 }
