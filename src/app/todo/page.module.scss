@@ -1,6 +1,50 @@
-.main {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.app-container {
+    height: 100vh;
+    background-color: #e6eaf6;
+    padding: 4rem;
+    .app-wrapper {
+        background-color: #fff;
+        border-radius: 1.5rem;
+        height: 100%;
+        display: flex;
+        .app-sidebar {
+            width: 8rem;
+            padding: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid #e6eaf6;
+            .app-sidebar--title {
+                margin-bottom: 2.5rem;
+            }
+        }
+        .app-content {
+            flex: 1 1;
+            padding: 3rem 4rem;
+            .app-content--search {
+                margin-bottom: 2.2rem;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .app-content--search-icon {
+                    opacity: 0.6;
+                }
+                .app-content--search-input {
+                    outline: none;
+                    border: none;
+                    flex: 1 1;
+                    padding: 4px 8px;
+                }
+            }
+            .app-content--title {
+                font-weight: 500;
+                margin-bottom: 2rem;
+            }
+            .app-content--grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
+            }
+        }
+    }
 }
